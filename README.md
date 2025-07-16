@@ -1,0 +1,1 @@
+# ugm_photostamp
