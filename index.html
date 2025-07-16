@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотоштамп</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Камера с гео-меткой</h1>
+        <p>Нажмите "Сделать фото", чтобы запечатлеть момент с вашим местоположением и временем.</p>
+        
+        <video id="camera-feed" autoplay playsinline></video>
+        
+        <button id="capture-btn">Сделать фото</button>
+        
+        <canvas id="photo-canvas" style="display:none;"></canvas>
+        
+        <div id="result-container" style="display:none;">
+            <h2>Ваше фото готово!</h2>
+            <img id="result-img" alt="Фото с гео-меткой">
+            <a id="download-link" download="photostamp.jpg">Скачать фото</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html
